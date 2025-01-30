@@ -1,4 +1,4 @@
-export const fetchLogements = async () => {
+export const fetchData = async () => {
     try {
         const response = await fetch("/data/logements.json")
         if (!response.ok) {
