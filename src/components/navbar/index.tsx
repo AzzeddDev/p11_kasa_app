@@ -1,19 +1,21 @@
 import React from "react"
 import {Link} from "react-router-dom"
 import {routes} from "../../router/routes"
+import logo from "../../assets/img/logo-kasa.png"
+import Button from "../button/button"
 
 const Navbar = () => {
 
     return (
         <>
             {/* TODO: navbar (logo + links) */}
-            <nav>
-                <div className="d-flex justify-content-between">
-                    <Link to={routes.home}>Logo</Link>
-                    <div className="d-flex gap-3">
-                        <Link to={routes.home}>Accueil</Link>
-                        <Link to={routes.about}>A Propos</Link>
-                    </div>
+            <nav className={"container navBar"}>
+                <Link to={routes.home}>
+                    <img className={"navBar__logo"} src={logo} alt=""/>
+                </Link>
+                <div className="d-flex gap-5">
+                    <Button to={routes.home}>Accueil</Button>
+                    <Button to={routes.about}>A propos</Button>
                 </div>
             </nav>
         </>
