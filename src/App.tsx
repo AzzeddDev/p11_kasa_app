@@ -7,11 +7,11 @@ import Footer from "./components/footer"
 const App = () => {
   return (
       <BrowserRouter>
-          <div className="container mt-5">
+          <section className="container-fluid p-0">
               <Navbar/>
               <Router/>
               <Footer/>
-          </div>
+          </section>
       </BrowserRouter>
   )
 }

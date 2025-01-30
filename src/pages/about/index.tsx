@@ -1,5 +1,4 @@
-const About = () => {
-
+export default function About() {
     return (
         <>
             {/* TODO: Page a propos */}
