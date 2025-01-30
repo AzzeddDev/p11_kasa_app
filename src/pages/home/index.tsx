@@ -1,7 +1,7 @@
-import {useEffect, useState} from "react";
-import {fetchLogements} from "../../data/fetchLogements";
-import {Link} from "react-router-dom";
-import {routes} from "../../router/routes";
+import {useEffect, useState} from "react"
+import {fetchLogements} from "../../data/fetchLogements"
+import {Link} from "react-router-dom"
+import {routes} from "../../router/routes"
 
 const Home = () => {
     const [logements, setLogements] = useState<any[]>([])
