@@ -8,7 +8,13 @@ const Navbar = () => {
         <>
             {/* TODO: navbar (logo + links) */}
             <nav>
-                <Link to={routes.home}>Logo</Link>
+                <div className="d-flex justify-content-between">
+                    <Link to={routes.home}>Logo</Link>
+                    <div className="d-flex gap-3">
+                        <Link to={routes.home}>Accueil</Link>
+                        <Link to={routes.about}>A Propos</Link>
+                    </div>
+                </div>
             </nav>
         </>
     )
