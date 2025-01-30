@@ -9,9 +9,6 @@ const Home = () => {
     return (
         <>
             <div className={"container mt-5"}>
-                {/* TODO: hero + titre -> container + children */}
-                {/* TODO: map card component logements */}
-
                 {loading && <Loading />}
                 {error && <p className={"text-danger"}>{error}</p>}
 
