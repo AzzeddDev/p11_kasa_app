@@ -59,6 +59,114 @@ p {
   color: #ffffff;
 }
 
+.headerHero {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  padding: 68px 15px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 82px;
+}
+.headerHero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.headerHero .bigTitle {
+  position: relative;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 68.45px;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.productLoop {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  padding: 52px;
+  align-items: center;
+  border-radius: 24px;
+  margin-bottom: 82px;
+}
+
+.logTemplate {
+  margin-bottom: 82px;
+}
+.logTemplate__cover {
+  height: 415px;
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 32px;
+  border-radius: 24px;
+}
+.logTemplate h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51.34px;
+  color: #FF6060;
+}
+.logTemplate__left__location {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.67px;
+  text-align: left;
+}
+.logTemplate__left__tags {
+  display: flex;
+  gap: 6px;
+}
+.logTemplate__left__tags__badge {
+  background-color: #FF6060;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 19.96px;
+  text-align: center;
+  padding: 1px 22px;
+}
+.logTemplate__right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.logTemplate__right__user {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.logTemplate__right__user__userName {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.67px;
+  text-align: end;
+  color: #FF6060;
+}
+.logTemplate__right__user__userPicture {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.logTemplate__right__note {
+  display: flex;
+  gap: 16px;
+}
+.logTemplate__right__note__star {
+  height: 20px;
+}
+
 .buttonDefault {
   font-weight: 500;
   font-size: 18px;

@@ -1,0 +1,41 @@
+.headerHero {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  padding: 68px 15px;
+  text-align: center;
+  color: $white;
+  border-radius: 24px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 82px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  & .bigTitle {
+    position: relative;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 68.45px;
+    z-index: 1;
+    color: $white;
+  }
+}
+
+.productLoop {
+  display: flex;
+  flex-direction: column;
+  background-color: $bgClear;
+  padding: 52px;
+  align-items: center;
+  border-radius: 24px;
+  margin-bottom: 82px;
+}
