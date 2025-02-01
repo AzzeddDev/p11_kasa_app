@@ -8,12 +8,16 @@ const LogCard = styled.div<{ backgroundUrl: string }>`
   background-position: center;
   background-repeat: no-repeat;
   padding: 32px;
-  height: 400px;
-  border-radius: 8px;
+  height: 312px;
+  border-radius: 10px;
   align-items: end;
   position: relative;
   overflow: hidden;
-  transition: background-size 0.3s ease;
+  transition: .3s all ease-in-out;
+  
+  &:hover {
+    transform: scale(1.025);
+  }
 
   &::after {
     content: "";
@@ -36,8 +40,8 @@ const Title = styled.div`
 
 const Card = ({ to, key, title, backgroundUrl }: {to: string, title: string, backgroundUrl: string, key: string }) => {
     return (
-        <Link className={"buttonProduct col-md-4"} to={to} key={key}>
-            <LogCard $backgroundUrl={backgroundUrl}>
+        <Link className={"buttonProduct"} to={to} key={key}>
+            <LogCard className={"logCard"} $backgroundUrl={backgroundUrl}>
                 <Title>{title}</Title>
             </LogCard>
         </Link>
