@@ -5,9 +5,16 @@ interface LogementType {
     id: string
     title: string
     cover: string
-    location: string
-    description: string
     pictures: string[]
+    description: string
+    host: {
+        name: string
+        picture: string
+    }
+    rating: string
+    location: string
+    equipments: string[]
+    tags: string[]
 }
 
 const useFetchSingleLogement = (id: string | undefined) => {
@@ -26,7 +33,7 @@ const useFetchSingleLogement = (id: string | undefined) => {
                 const foundLogement = logements.find((l: LogementType) => l.id === id)
                 setLogement(foundLogement || null)
             } catch (err) {
-                setError("An data-containers occurred while fetching the logement.")
+                setError("Un erreur est survenu lors du fetch data")
             } finally {
                 setLoading(false)
             }
