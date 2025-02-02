@@ -29,6 +29,7 @@ const useFetchSingleLogement = (id: string | undefined) => {
             try {
                 setLoading(true)
                 setError(null)
+
                 const logements = await fetchData()
                 const foundLogement = logements.find((l: LogementType) => l.id === id)
                 setLogement(foundLogement || null)

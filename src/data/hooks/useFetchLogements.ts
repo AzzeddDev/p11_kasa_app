@@ -11,12 +11,10 @@ const useFetchLogements = () => {
             try {
                 setLoading(true)
                 setError(null)
+                
                 const data = await fetchData()
-
-                setTimeout(() => {
-                    setLogements(data)
-                    setLoading(false)
-                }, 100)
+                setLogements(data)
+                setLoading(false)
             } catch (err) {
                 setError("Erreur lors du fetch data")
             } finally {

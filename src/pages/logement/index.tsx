@@ -3,13 +3,13 @@ import NotFound from "../data-containers/notFound"
 import useFetchSingleLogement from "../../data/hooks/useFetchSingleLogement"
 import starFilled from "../../assets/img/star-filed.png"
 import starEmpty from "../../assets/img/star-empty.png"
+import Loading from "../data-containers/loading";
+import React from "react";
 
 export default function Logement () {
     const { id } = useParams<{ id: string }>()
     const { logement, loading, error } = useFetchSingleLogement(id)
 
-    if (loading) return <p>Chargement...</p>
-    if (error) return <p className={"text-danger"}>{error}</p>
     if (!logement) return <NotFound/>
 
     return (
@@ -17,6 +17,9 @@ export default function Logement () {
             {/* TODO: créer un composent accordion */}
             {/* TODO: créer un carousel */}
             <section>
+                {loading && <Loading />}
+                {error && <p className={"text-danger"}>{error}</p>}
+
                 <div className={"container logTemplate"}>
                     <img className="logTemplate__cover img-fluid rounded" src={logement.cover} alt={logement.title} />
                     <div className={"row logTemplate__left"}>
