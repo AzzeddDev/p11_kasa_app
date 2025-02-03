@@ -7,6 +7,7 @@ import HomeImgHero from "../../assets/img/image-source-header-home.png"
 import Header from "../../containers/header"
 
 const Home = () => {
+    {/* Hook personnalisé */}
     const { logements, loading, error } = useFetchLogements()
 
     return (

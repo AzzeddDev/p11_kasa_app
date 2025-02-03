@@ -86,17 +86,25 @@ p {
 
   &__buttonsPrev {
     position: absolute;
+    background-color: transparent;
+    border: none;
     z-index: 10;
-    left: 0;
+    left: 15px;
     top: 50%;
     transform: translateY(-50%);
     margin: 0;
+
+    & img {
+      transform: rotate(180deg);
+    }
   }
 
   &__buttonsNext {
     position: absolute;
+    background-color: transparent;
+    border: none;
     z-index: 10;
-    right: 0;
+    right: 5px;
     top: 50%;
     transform: translateY(-50%);
     margin: 0;

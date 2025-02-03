@@ -36,7 +36,7 @@ const Carousel = ({ logement }) => {
                 </button>
 
                 <button onClick={nextSlide} className="carousel__buttonsNext">
-                    ❯
+                    <img src={arrowCarousel} alt=""/>
                 </button>
             </div>
         </div>
