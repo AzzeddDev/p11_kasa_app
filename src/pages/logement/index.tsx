@@ -1,10 +1,13 @@
+import React from "react"
 import {useParams} from "react-router-dom"
 import NotFound from "../data-containers/notFound"
 import useFetchSingleLogement from "../../data/hooks/useFetchSingleLogement"
 import starFilled from "../../assets/img/star-filed.png"
 import starEmpty from "../../assets/img/star-empty.png"
-import Loading from "../data-containers/loading";
-import React from "react";
+import Loading from "../data-containers/loading"
+
+import Accordion from "../../components/accordion"
+import Carousel from "../../components/carousel"
 
 export default function Logement () {
     const { id } = useParams<{ id: string }>()
@@ -14,14 +17,22 @@ export default function Logement () {
 
     return (
         <>
-            {/* TODO: créer un composent accordion */}
-            {/* TODO: créer un carousel */}
             <section>
                 {loading && <Loading />}
                 {error && <p className={"text-danger"}>{error}</p>}
 
                 <div className={"container logTemplate"}>
-                    <img className="logTemplate__cover img-fluid rounded" src={logement.cover} alt={logement.title} />
+
+                    {/* TODO: Carousel */}
+                    {/*<img className="logTemplate__cover img-fluid rounded" src={logement.cover} alt={logement.title} />*/}
+
+                    {/*{console.log("logement dans Logement:", logement)}*/}
+                    <Carousel logement={logement} />
+
+                    {/*{console.log("logement:", logement.pictures)}*/}
+                    {/*{console.log("test log",logement?.pictures)}*/}
+
+
                     <div className={"row logTemplate__left"}>
                         <div className={"col-md-8"}>
                             <div className={"mb-3"}>
@@ -54,6 +65,16 @@ export default function Logement () {
                                         className="logTemplate__right__star"
                                     />
                                 ))}
+                            </div>
+                        </div>
+
+                        {/* TODO: ajouter Accordion ici */}
+                        <div className={"row py-4"}>
+                            <div className={"col-md-6"}>
+                                <Accordion title={"Description"} content={logement.description} />
+                            </div>
+                            <div className={"col-md-6"}>
+                                <Accordion title={"Équipements"} content={logement.equipments} />
                             </div>
                         </div>
                     </div>
