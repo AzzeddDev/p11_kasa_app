@@ -7,11 +7,15 @@ import Footer from "./components/footer"
 const App = () => {
   return (
       <BrowserRouter>
-          <section className="container-fluid p-0">
+          <header>
               <Navbar/>
-              <Router/>
-              <Footer/>
-          </section>
+          </header>
+          <main>
+              <section className="container-fluid p-0">
+                  <Router/>
+              </section>
+          </main>
+          <Footer/>
       </BrowserRouter>
   )
 }
