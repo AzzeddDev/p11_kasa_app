@@ -1,13 +1,15 @@
 import {Link} from "react-router-dom"
 import {routes} from "../../router/routes"
+import Button from "../../components/button/button";
 
 const NotFound = () => {
     return (
-        <div className={"text-center mt-5"}>
-            {/* TODO: re-designer la page 404 */}
-            <h1 className={"text-danger"}>404</h1>
-            <p>Oups! La page que vous demandez n'existe pas.</p>
-            <Link to={routes.home} className={"btn"}>Retourner sur la page d’accueil</Link>
+        <div className={"container"}>
+            <div className={"errorPage text-center"}>
+                <h1>404</h1>
+                <p>Oups! La page que vous demandez n'existe pas.</p>
+                <Button to={routes.home} className={"buttonDefault"}>Retourner sur la page d’accueil</Button>
+            </div>
         </div>
     )
 }

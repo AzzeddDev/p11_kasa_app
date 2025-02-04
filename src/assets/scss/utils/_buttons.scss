@@ -1,4 +1,16 @@
 .buttonDefault {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.67px;
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: $dark;
+}
+
+.buttonNavbar {
   font-weight: 500;
   font-size: 18px;
   line-height: 34.22px;
