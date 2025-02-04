@@ -1,5 +1,6 @@
 import {useState} from "react"
 import arrowCarousel from "../../assets/img/arrowCarousel.png"
+import Loading from "../../pages/data-containers/loading";
 
 
 const Carousel = ({ logement }) => {
@@ -10,13 +11,14 @@ const Carousel = ({ logement }) => {
 
 
     if (!logement || !logement.pictures || logement.pictures.length === 0) {
-        return <p>Loading images...</p>
+        return <Loading/>
     }
 
     const prevSlide = () =>
         setCurrentIndex((prev) =>
             (prev === 0 ? logement.pictures.length - 1 : prev - 1)
         )
+
     const nextSlide = () =>
         setCurrentIndex((prev) =>
             (prev === logement.pictures.length - 1 ? 0 : prev + 1)
