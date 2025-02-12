@@ -1,7 +1,5 @@
 import React from "react"
 
-
-
 const Loading = () => (
     <div className={"container"}>
         <div className="loadingContainer">

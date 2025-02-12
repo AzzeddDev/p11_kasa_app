@@ -5,7 +5,7 @@ import NotFound from "../pages/data-containers/notFound"
 import Logement from "../pages/logement"
 import About from "../pages/about"
 
-export default function Router() {
+const Router = () => {
     return (
         <Routes>
             <Route path={routes.home} element={<Home />}/>
@@ -15,3 +15,5 @@ export default function Router() {
         </Routes>
     )
 }
+
+export default Router

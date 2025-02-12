@@ -8,12 +8,13 @@ const Navbar = () => {
 
     return (
         <>
-            {/* TODO: navbar (logo + links) */}
             <nav className={"container navBar"}>
-                <Link to={routes.home}>
-                    <img className={"navBar__logo"} src={logo} alt=""/>
-                </Link>
-                <div className="d-flex gap-5">
+                <div className={"col-5"}>
+                    <Link to={routes.home}>
+                        <img className={"navBar__logo"} src={logo} alt=""/>
+                    </Link>
+                </div>
+                <div className="navBar__buttons d-flex col-7 justify-content-end">
                     <Button to={routes.home} className={"buttonNavbar"}>
                         Accueil
                     </Button>

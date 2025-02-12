@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import {fetchData} from "../fetchData"
 
-const useFetchLogements = () => {
+export default function useFetchLogements() {
     const [logements, setLogements] = useState<any[]>([])
     const [loading, setLoading] = useState<boolean>(true)
     const [error, setError] = useState<string | null>(null)
@@ -27,5 +27,3 @@ const useFetchLogements = () => {
 
     return { logements, loading, error }
 }
-
-export default useFetchLogements

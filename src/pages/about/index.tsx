@@ -2,7 +2,7 @@ import AboutImgHero from "../../assets/img/image-source-header-a-propos.png"
 import Header from "../../containers/header"
 import Accordion from "../../components/accordion";
 
-export default function About() {
+const About = () => {
     return (
         <>
             {/* TODO: Page a propos, ajouter des accordions */}
@@ -40,3 +40,5 @@ export default function About() {
         </>
     )
 }
+
+export default About

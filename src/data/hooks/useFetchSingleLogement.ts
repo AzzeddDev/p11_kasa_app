@@ -17,7 +17,7 @@ interface LogementType {
     tags: string[]
 }
 
-const useFetchSingleLogement = (id: string | undefined) => {
+export default function useFetchSingleLogement (id: string | undefined) {
     const [logement, setLogement] = useState<LogementType | null>(null)
     const [loading, setLoading] = useState<boolean>(true)
     const [error, setError] = useState<string | null>(null)
@@ -45,5 +45,3 @@ const useFetchSingleLogement = (id: string | undefined) => {
 
     return { logement, loading, error }
 }
-
-export default useFetchSingleLogement
