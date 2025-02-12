@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Loading Spinner CSS */
 .loadingContainer {
@@ -121,12 +122,26 @@ p {
   transform: translateY(-50%);
   margin: 0;
 }
+.carousel__index {
+  text-align: center;
+  margin-top: -42px;
+}
+.carousel__index span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.67px;
+  text-align: center;
+  color: #ffffff;
+}
 
 .navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 35px 10px;
+}
+.navBar__buttons {
+  gap: 3rem;
 }
 .navBar__logo {
   height: 68px;
@@ -208,6 +223,7 @@ p {
   font-weight: 500;
   line-height: 25.67px;
   text-align: left;
+  margin-bottom: 8px;
 }
 .logTemplate__left__tags {
   display: flex;
@@ -304,6 +320,31 @@ p {
 .buttonProduct {
   text-decoration: none;
   color: #ffffff;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+/* Small devices (phones, less than 768px) */
+@media all and (max-width: 767px) {
+  .navBar__logo {
+    height: 42px;
+  }
+  .navBar__buttons {
+    gap: 1.5rem;
+  }
+  .buttonNavbar {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17.11px;
+    text-align: right;
+  }
+  .headerHero .bigTitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

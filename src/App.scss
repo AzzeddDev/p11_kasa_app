@@ -5,7 +5,6 @@
 @import "assets/scss/base/base";
 @import "assets/scss/base/navbar";
 @import "assets/scss/base/footer";
-@import "assets/scss/base/responsive";
 
 // pages
 @import "assets/scss/pages/home";
@@ -15,3 +14,6 @@
 // Utils
 @import "assets/scss/utils/accordion";
 @import "assets/scss/utils/buttons";
+
+// Responsive
+@import "assets/scss/base/responsive";

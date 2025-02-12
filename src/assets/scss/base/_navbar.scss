@@ -4,6 +4,10 @@
   align-items: center;
   padding: 35px 10px;
 
+  &__buttons {
+    gap: 3rem;
+  }
+
   &__logo {
     height: 68px;
   }

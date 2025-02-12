@@ -1,0 +1,37 @@
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media all and (min-width: 767px) and (max-width: 980px) {
+}
+
+/* Small devices (phones, less than 768px) */
+@media all and (max-width: 767px) {
+  // Navbar
+  .navBar {
+    &__logo {
+      height: 42px;
+    }
+
+    &__buttons {
+      gap: 1.5rem;
+    }
+  }
+
+  .buttonNavbar {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17.11px;
+    text-align: right;
+  }
+
+  // Header
+  .headerHero {
+    & .bigTitle {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: left;
+    }
+  }
+}
