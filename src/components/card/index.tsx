@@ -38,9 +38,9 @@ const Title = styled.div`
   z-index: 1;
 `
 
-const Card = ({ to, key, title, backgroundUrl }: {to: string, title: string, backgroundUrl: string, key: string }) => {
+const Card = ({ to, title, backgroundUrl }: {to: string, title: string, backgroundUrl: string, key: string }) => {
     return (
-        <Link className={"buttonProduct"} to={to} key={key}>
+        <Link className={"buttonProduct"} to={to}>
             <LogCard className={"logCard"} $backgroundUrl={backgroundUrl}>
                 <Title>{title}</Title>
             </LogCard>

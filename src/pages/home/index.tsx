@@ -26,7 +26,7 @@ const Home = () => {
                 <div className="productLoop">
                     <div className={"row g-md-5 g-4"}>
                         {logements.map((logement, i) => (
-                            <article className={"col-md-4"}>
+                            <article className={"col-md-4"} key={i}>
                                 <Card
                                     key={i}
                                     title={logement.title}

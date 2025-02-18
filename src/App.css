@@ -399,7 +399,10 @@ p {
     height: 32px;
   }
   .logTemplate__cover {
-    height: 315px;
+    height: 255px;
+  }
+  .carousel__index {
+    display: none;
   }
 }
 
