@@ -7,7 +7,7 @@ interface LogementDetailsProps {
 }
 
 const LogementDetails: React.FC<LogementDetailsProps> = ({ description, equipements }) => (
-    <div className={"d-flex gap-3 py-4"}>
+    <div className={"d-flex flex-md-row flex-column gap-3 py-4"}>
         <div className={"col"}>
             <Accordion title={"Description"} content={description} />
         </div>

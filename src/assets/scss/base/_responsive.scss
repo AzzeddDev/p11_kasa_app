@@ -19,7 +19,7 @@
   }
 
   .buttonNavbar {
-    font-size: 12px;
+    //font-size: 12px;
     font-weight: 500;
     line-height: 17.11px;
     text-align: right;
@@ -27,11 +27,79 @@
 
   // Header
   .headerHero {
+    margin-bottom: 32px;
+    text-align: left;
+    padding: 42px 15px;
+    border-radius: 10px;
+
     & .bigTitle {
-      font-size: 24px;
       font-weight: 700;
-      line-height: 24px;
-      text-align: left;
+      font-size: 28px;
+      line-height: 32px;
+      margin: 0;
     }
+  }
+
+  .productLoop {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .errorPage {
+    padding: 100px 10px;
+    gap: 125px;
+
+    h1 {
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 136.9px;
+      text-align: center;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25.67px;
+      text-align: center;
+    }
+  }
+
+  .logTemplate__left h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 25.67px;
+  }
+
+  .logTemplate__left__tags {
+    flex-wrap: wrap;
+  }
+
+  .logTemplate__right {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    &__note {
+      gap: 10px;
+    }
+
+    &__star {
+      height: 18px;
+      width: 18px;
+    }
+
+    &__user__userPicture {
+      height: 45px;
+      width: 45px;
+    }
+  }
+
+  .carousel__buttonsNext img, .carousel__buttonsPrev img {
+    height: 32px;
+  }
+
+  .logTemplate__cover {
+    height: 315px;
   }
 }

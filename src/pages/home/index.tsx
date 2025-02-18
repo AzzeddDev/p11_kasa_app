@@ -12,7 +12,7 @@ const Home = () => {
 
     return (
         <>
-            <div className={"container mt-5"}>
+            <div className={"container mt-md-5"}>
                 {loading && <Loading />}
                 {error && <p className={"text-danger"}>{error}</p>}
 
@@ -24,7 +24,7 @@ const Home = () => {
 
                 {/* Loop products */}
                 <div className="productLoop">
-                    <div className={"row g-5"}>
+                    <div className={"row g-md-5 g-4"}>
                         {logements.map((logement, i) => (
                             <article className={"col-md-4"}>
                                 <Card
